@@ -8,13 +8,13 @@ Time Budget: **1-1.5 hours**
 
 ### 📝 To Do
 
+### 🔄 In Progress
+
 - [ ] Initial project setup
   - [ ] Initialize Node.js project with TypeScript
-  - [ ] Set up backend framework (Express/Fastify/NestJS)
+  - [ ] Set up backend framework (Hono)
   - [ ] Configure TypeScript and ESLint
   - [ ] Create project structure
-
-### 🔄 In Progress
 
 ### ✅ Done
 
@@ -74,13 +74,13 @@ Time Budget: **1-1.5 hours**
 ## 📈 Progress Tracking
 
 ### Time Spent
-- Backend: ___/45 mins
+- Backend: Started at 22:05 CEST
 - Frontend: ___/20 mins
 - Documentation: ___/15 mins
 - **Total**: ___/80 mins (target: 60-90 mins)
 
 ### Completion Status
-- Part 1: ⬜⬜⬜⬜⬜ 0%
+- Part 1: 🟦⬜⬜⬜⬜ 10% (In Progress)
 - Part 2: ⬜⬜⬜⬜⬜ 0%
 - Part 3: ⬜⬜⬜⬜⬜ 0%
 
