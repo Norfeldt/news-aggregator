@@ -10,13 +10,13 @@ Time Budget: **1-1.5 hours**
 
 ### 🔄 In Progress
 
-- [ ] Initial project setup
-  - [ ] Initialize Node.js project with TypeScript
-  - [ ] Set up backend framework (Hono)
-  - [ ] Configure TypeScript and ESLint
-  - [ ] Create project structure
-
 ### ✅ Done
+
+- [x] Initial project setup
+  - [x] Initialize Node.js project with TypeScript
+  - [x] Set up backend framework (Hono)
+  - [x] Configure TypeScript and ESLint
+  - [x] Create project structure
 
 ---
 
@@ -25,22 +25,22 @@ Time Budget: **1-1.5 hours**
 ### Part 1: Backend API (40-50 mins)
 
 #### Setup (10 mins)
-- [ ] Initialize backend project
-- [ ] Install dependencies
-- [ ] Configure TypeScript
-- [ ] Set up basic server
+- [x] Initialize backend project
+- [x] Install dependencies
+- [x] Configure TypeScript
+- [x] Set up basic server
 
 #### Core Features (25 mins)
-- [ ] Implement HN API client
-- [ ] Create in-memory story storage
-- [ ] Build `/stories` endpoint
-- [ ] Build `/stories/:id` endpoint with author details
-- [ ] Implement `/refresh` endpoint
+- [x] Implement HN API client
+- [x] Create in-memory story storage
+- [x] Build `/stories` endpoint
+- [x] Build `/stories/:id` endpoint with author details
+- [x] Implement `/refresh` endpoint
 
-#### Bonus Features (if time permits)
-- [ ] Add caching mechanism
-- [ ] Implement rate limiting
-- [ ] Design extensible API structure
+#### Bonus Features (implemented)
+- [x] Add caching mechanism (5-minute TTL with auto-refresh)
+- [x] Implement rate limiting (100ms delay on HN API calls)
+- [x] Design extensible API structure (service layer pattern)
 
 ### Part 2: Frontend (15-20 mins)
 
@@ -74,13 +74,13 @@ Time Budget: **1-1.5 hours**
 ## 📈 Progress Tracking
 
 ### Time Spent
-- Backend: Started at 22:05 CEST
+- Backend: 45 mins (22:05 - 22:50 CEST) ✅
 - Frontend: ___/20 mins
 - Documentation: ___/15 mins
-- **Total**: ___/80 mins (target: 60-90 mins)
+- **Total**: 45/80 mins (target: 60-90 mins)
 
 ### Completion Status
-- Part 1: 🟦⬜⬜⬜⬜ 10% (In Progress)
+- Part 1: 🟩🟩🟩🟩🟩 100% (Complete)
 - Part 2: ⬜⬜⬜⬜⬜ 0%
 - Part 3: ⬜⬜⬜⬜⬜ 0%
 
@@ -97,11 +97,18 @@ Time Budget: **1-1.5 hours**
 
 ## 📝 Notes
 
+### Part 1 Accomplishments
+- Chose Hono framework for ultrafast performance and edge compatibility
+- Implemented all required endpoints with proper error handling
+- Added bonus features: caching with TTL, rate limiting, clean architecture
+- Created comprehensive README with framework guide and pagination roadmap
+- Structured code for easy extension (service layer pattern)
+
 ### Quick Wins
-- Focus on core functionality first
-- Use simple in-memory storage
+- Focus on core functionality first ✅
+- Use simple in-memory storage ✅
 - Minimal UI is fine
-- Document decisions as you go
+- Document decisions as you go ✅
 
 ### Watch Out For
 - Don't over-engineer
