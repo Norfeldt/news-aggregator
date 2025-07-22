@@ -1,0 +1,8 @@
+### Get all stories
+GET http://localhost:3000/stories
+
+### Get a specific story (replace with actual story ID)
+GET http://localhost:3000/stories/44648728
+
+### Refresh stories from HN
+POST http://localhost:3000/refresh
