@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import type { StoryListItem, StoryDetail } from '../types/hn.types'
+import type { StoryListItem } from '../types/hn.types'
 import { getCachedStories, getCachedStory, refreshStories, getCacheStats } from '../services/story-cache.service'
 import { getUser } from '../services/hn-api.service'
 
@@ -51,18 +51,26 @@ storiesRoutes.get('/:id', async (c) => {
       return c.json({ error: 'Author details not found' }, 404)
     }
     
-    const storyDetail: StoryDetail = {
+    // Return the complete story data with all fields the frontend expects
+    const storyWithAuthor = {
       id: story.id,
       title: story.title,
       score: story.score,
       url: story.url,
-      author: story.by,
-      authorKarma: author.karma,
-      authorCreated: author.created
+      by: story.by,
+      time: story.time,
+      descendants: story.descendants || 0,
+      text: undefined, // HN stories typically don't have text, but we include it for completeness
+      authorInfo: {
+        id: author.id,
+        karma: author.karma,
+        created: author.created,
+        about: author.about
+      }
     }
     
     return c.json({
-      story: storyDetail,
+      story: storyWithAuthor,
       cache: getCacheStats()
     })
   } catch (error) {
