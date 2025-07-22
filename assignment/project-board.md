@@ -10,6 +10,13 @@ Time Budget: **1-1.5 hours**
 
 ### 🔄 In Progress
 
+- [ ] Part 2: Frontend Implementation
+  - [ ] Initialize frontend project with React + Vite
+  - [ ] Set up API client configuration
+  - [ ] Create story list component
+  - [ ] Implement story detail view
+  - [ ] Add navigation between views
+
 ### ✅ Done
 
 - [x] Initial project setup
@@ -45,7 +52,7 @@ Time Budget: **1-1.5 hours**
 ### Part 2: Frontend (15-20 mins)
 
 #### Setup (5 mins)
-- [ ] Initialize frontend project
+- [ ] Initialize frontend project (React + Vite chosen)
 - [ ] Choose and set up framework
 - [ ] Configure API client
 
@@ -75,13 +82,13 @@ Time Budget: **1-1.5 hours**
 
 ### Time Spent
 - Backend: 45 mins (22:05 - 22:50 CEST) ✅
-- Frontend: ___/20 mins
+- Frontend: Started (22:55 CEST)
 - Documentation: ___/15 mins
-- **Total**: 45/80 mins (target: 60-90 mins)
+- **Total**: 50+/80 mins (target: 60-90 mins)
 
 ### Completion Status
 - Part 1: 🟩🟩🟩🟩🟩 100% (Complete)
-- Part 2: ⬜⬜⬜⬜⬜ 0%
+- Part 2: 🟨⬜⬜⬜⬜ 20% (In Progress)
 - Part 3: ⬜⬜⬜⬜⬜ 0%
 
 ---
