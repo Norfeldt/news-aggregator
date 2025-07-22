@@ -77,13 +77,14 @@ export async function getUser(username: string): Promise<HNUser | null> {
 }
 
 export async function getTopStories(limit = 20): Promise<HNStory[]> {
-  const storyIds = await getTopStoryIds(limit)
+  // Fetch extra stories to account for any that might be filtered out
+  const storyIds = await getTopStoryIds(limit + 5)
   
   // Fetch stories in parallel but with controlled concurrency
   const stories: HNStory[] = []
   const batchSize = 5 // Process 5 stories at a time
   
-  for (let i = 0; i < storyIds.length; i += batchSize) {
+  for (let i = 0; i < storyIds.length && stories.length < limit; i += batchSize) {
     const batch = storyIds.slice(i, i + batchSize)
     const batchStories = await Promise.all(
       batch.map(id => getStory(id))
@@ -93,5 +94,6 @@ export async function getTopStories(limit = 20): Promise<HNStory[]> {
     stories.push(...validStories)
   }
   
-  return stories
+  // Return exactly the requested limit
+  return stories.slice(0, limit)
 }
